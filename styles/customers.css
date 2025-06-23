@@ -48,10 +48,6 @@
 
 /* Tablet responsiveness */
 @media (max-width: 1024px) {
-    .customers {
-        margin-top: 5rem;
-    }
-
     .customers__title {
         font-size: 2.1rem;
         width: 95vw;
@@ -84,10 +80,6 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .customers {
-        margin-top: 2.5rem;
-    }
-
     .customers__title {
         font-size: 1.35rem;
         width: 100vw;

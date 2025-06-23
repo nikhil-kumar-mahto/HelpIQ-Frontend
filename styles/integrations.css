@@ -1,6 +1,6 @@
 .integrations-section {
     background: var(--primary-bg-color);
-    color: #fff;
+    color: var(--text-color);
     padding: 0;
     display: flex;
     align-items: flex-start;
@@ -26,17 +26,17 @@
 .integrations-section__badge {
     display: inline-block;
     padding: 6px 28px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--badge-background);
     border-radius: 8px;
     font-size: 0.97rem;
-    color: #ded6f7;
+    color: var(--badge-text-color);
     letter-spacing: 0.1em;
     margin-bottom: 18px;
     font-weight: 500;
 }
 
 .integrations-section__title {
-    color: #fff;
+    color: var(--text-color);
     font-size: 2.7rem;
     font-weight: 700;
     letter-spacing: -0.01em;
@@ -88,7 +88,6 @@
 @media (max-width: 900px) {
     .integrations-section__container {
         max-width: 98vw;
-        padding-top: 40px;
     }
 
     .integrations-section__title {
@@ -115,7 +114,8 @@
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .integrations-section__container {
-        padding: 30px 4px 0 4px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
     .integrations-section__title {

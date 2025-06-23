@@ -107,8 +107,8 @@
     .support {
         flex-direction: row;
         gap: 2rem;
-        margin-top: 3rem;
-        padding: 0 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .support__title {
@@ -126,9 +126,9 @@
     .support {
         flex-direction: column;
         gap: 2rem;
-        margin-top: 2rem;
         align-items: flex-start;
-        padding: 0 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .support__content {
@@ -204,7 +204,8 @@
     .support {
         margin-top: 1rem;
         gap: 1rem;
-        padding: 0 6px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
 
     .support__title {

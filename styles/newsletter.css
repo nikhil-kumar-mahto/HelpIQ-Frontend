@@ -21,8 +21,8 @@
 
 .newsletter-cta__badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.15);
-    color: #ded6f7;
+    background: var(--badge-background);
+    color: var(--badge-text-color);
     font-size: 1.08rem;
     font-weight: 400;
     padding: 8px 34px;
@@ -35,7 +35,7 @@
 }
 
 .newsletter-cta__title {
-    color: #fff;
+    color: var(--text-color);
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.16;
@@ -64,7 +64,7 @@
     background: transparent;
     border: 1.5px solid rgba(255, 255, 255, 0.11);
     outline: none;
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.18rem;
     font-weight: 400;
     padding: 0 18px;
@@ -79,14 +79,14 @@
 }
 
 .newsletter-cta__input::placeholder {
-    color: #ded6f7;
+    color: var(--text-color);
     opacity: 1;
     font-weight: 400;
 }
 
 .newsletter-cta__button {
-    background: #A587FF;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--text-color);
     font-size: 1.18rem;
     font-weight: 500;
     border: none;
@@ -99,15 +99,10 @@
     white-space: nowrap;
 }
 
-.newsletter-cta__button:hover,
-.newsletter-cta__button:focus {
-    background: #c1adff;
-}
-
 /* Decorative SVGs - positions */
 .newsletter-cta__star--yellow {
     position: absolute;
-    left: 8vw;
+    left: 16vw;
     bottom: 36px;
     z-index: 1;
     width: 84px;
@@ -117,8 +112,8 @@
 
 .newsletter-cta__sparkle--green {
     position: absolute;
-    left: 14vw;
-    top: 120px;
+    left: 24vw;
+    top: 206px;
     z-index: 1;
     width: 34px;
     height: 34px;
@@ -127,7 +122,7 @@
 
 .newsletter-cta__star--blue {
     position: absolute;
-    right: 12vw;
+    right: 24vw;
     top: 62px;
     z-index: 1;
     width: 46px;
@@ -137,7 +132,7 @@
 
 .newsletter-cta__flower {
     position: absolute;
-    right: 8vw;
+    right: 20vw;
     bottom: 38px;
     z-index: 1;
     width: 66px;
@@ -147,7 +142,8 @@
 
 @media (max-width: 950px) {
     .newsletter-cta {
-        padding: 0 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .newsletter-cta__title {
@@ -172,7 +168,8 @@
 /* Mobile optimization for input, button, SVGs */
 @media (max-width: 600px) {
     .newsletter-cta {
-        padding: 0 12px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .newsletter-cta__content {
@@ -253,7 +250,8 @@
 /* Extra small screens: optionally hide SVGs */
 @media (max-width: 400px) {
     .newsletter-cta {
-        padding: 0 4px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
     .newsletter-cta__star--yellow,

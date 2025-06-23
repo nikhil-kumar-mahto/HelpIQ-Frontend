@@ -25,7 +25,7 @@
 .faq-section__badge {
     display: inline-block;
     padding: 4px 18px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--badge-background);
     border-radius: 8px;
     font-size: 0.95rem;
     color: #ded6f7;
@@ -106,7 +106,7 @@
 }
 
 .faq-accordion__icon--active {
-    color: #fff;
+    color: var(--text-color);
 }
 
 .faq-accordion__answer {
@@ -133,7 +133,6 @@
 @media (max-width: 900px) {
     .faq-section__container {
         max-width: 95vw;
-        padding-top: 40px;
     }
 
     .faq-section__title {
@@ -143,7 +142,8 @@
 
 @media (max-width: 600px) {
     .faq-section__container {
-        padding: 26px 6px 0 6px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
 
     .faq-section__title {

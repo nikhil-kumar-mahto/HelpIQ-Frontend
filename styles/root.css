@@ -4,6 +4,9 @@
     --body-color: rgba(20, 9, 45, 1);
     --faded-text: rgba(124, 110, 151, 1);
     --primary-bg-color: rgb(17, 7, 38);
+    --border-color: #322f38;
+    --badge-background: rgba(255, 255, 255, 0.08);
+    --badge-text-color: #b9b2c9;
 }
 
 * {
