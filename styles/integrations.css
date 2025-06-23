@@ -77,13 +77,14 @@
     box-shadow: 0 2px 14px 0 rgba(60, 26, 90, 0.07);
 }
 
+.integration-icon img,
 .integration-icon svg {
     width: 36px;
     height: 36px;
     display: block;
 }
 
-/* Responsive styles */
+/* Tablet responsiveness */
 @media (max-width: 900px) {
     .integrations-section__container {
         max-width: 98vw;
@@ -104,12 +105,14 @@
         height: 56px;
     }
 
+    .integration-icon img,
     .integration-icon svg {
         width: 26px;
         height: 26px;
     }
 }
 
+/* Mobile responsiveness */
 @media (max-width: 600px) {
     .integrations-section__container {
         padding: 30px 4px 0 4px;
@@ -133,6 +136,7 @@
         height: 40px;
     }
 
+    .integration-icon img,
     .integration-icon svg {
         width: 18px;
         height: 18px;

@@ -1,7 +1,7 @@
 .testimonials-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 8rem 20px;
     text-align: center;
 }
 
@@ -143,7 +143,12 @@
     margin-top: 3px;
 }
 
+/* Tablet responsiveness */
 @media (max-width: 900px) {
+    .testimonials-section {
+        padding: 40px 8px;
+    }
+
     .testimonial-card {
         flex-direction: column;
         align-items: center;
@@ -152,34 +157,95 @@
 
     .testimonial-content {
         min-width: 0;
-        max-width: 100vw;
+        max-width: 95vw;
+        text-align: center;
+    }
+
+    .testimonial-image-bg {
+        width: 180px;
+        height: 180px;
+        min-width: 180px;
+        min-height: 180px;
+    }
+
+    .testimonials-carousel {
+        gap: 24px;
     }
 }
 
+/* Mobile responsiveness */
 @media (max-width: 600px) {
+    .testimonials-section {
+        padding: 25px 2px;
+    }
+
     .testimonials-header {
         margin-bottom: 18px;
     }
 
+    .testimonials-badge {
+        font-size: 0.92rem;
+        padding: 7px 16px;
+    }
+
     .testimonials-title {
-        font-size: 2rem;
+        font-size: 1.2rem;
+        margin-top: 12px;
     }
 
     .testimonials-carousel {
         gap: 10px;
         flex-direction: column;
+        margin-top: 24px;
     }
 
     .carousel-btn {
-        width: 55px;
-        height: 55px;
-        font-size: 1.3rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+
+    .testimonial-card-container {
+        width: 100vw;
+        min-width: 0;
+    }
+
+    .testimonial-card {
+        gap: 10px;
     }
 
     .testimonial-image-bg {
-        width: 160px;
-        height: 160px;
-        min-width: 160px;
-        min-height: 160px;
+        width: 110px;
+        height: 110px;
+        min-width: 110px;
+        min-height: 110px;
+    }
+
+    .testimonial-content {
+        padding: 0 10px;
+        max-width: 98vw;
+    }
+
+    .testimonial-quote-icon {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+
+    .testimonial-stars {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .testimonial-text {
+        font-size: 0.96rem;
+        margin-bottom: 16px;
+    }
+
+    .testimonial-author-name {
+        font-size: 1.05rem;
+    }
+
+    .testimonial-author-role {
+        font-size: 0.92rem;
     }
 }

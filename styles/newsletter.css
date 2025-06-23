@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 0 15vw;
 }
 
 .newsletter-cta__content {
@@ -52,13 +52,10 @@
     background: rgba(255, 255, 255, 0.03);
     border-radius: 11px;
     box-shadow: 0 2px 12px 0 rgba(60, 26, 90, 0.08);
-    /* border: 1px solid rgba(255, 255, 255, 0.11);  <-- Removed */
     overflow: hidden;
     position: relative;
     gap: 18px;
-    /* Add gap for spacing */
     padding: 0 8px;
-    /* Optional: add some side padding for balance */
 }
 
 .newsletter-cta__input {
@@ -148,64 +145,121 @@
     opacity: 0.8;
 }
 
-/* Responsive styles */
 @media (max-width: 950px) {
-    .newsletter-cta__title {
-        font-size: 2.2rem;
+    .newsletter-cta {
+        padding: 0 40px;
     }
 
-    .newsletter-cta__content {
-        padding: 44px 6px 34px 6px;
+    .newsletter-cta__title {
+        font-size: 1.6rem;
     }
 
     .newsletter-cta__form {
-        max-width: 95vw;
-        gap: 10px;
-        padding: 0 3px;
-    }
-
-    .newsletter-cta__button,
-    .newsletter-cta__input {
-        border-radius: 6px;
-        height: 48px;
-        font-size: 1.06rem;
-    }
-
-    .newsletter-cta__input {
-        padding: 0 8px;
-    }
-}
-
-@media (max-width: 600px) {
-    .newsletter-cta__title {
-        font-size: 1.18rem;
-        margin-bottom: 23px;
-    }
-
-    .newsletter-cta__badge {
-        font-size: 0.88rem;
-        padding: 7px 16px;
-        margin-bottom: 17px;
-    }
-
-    .newsletter-cta__form {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-        border-radius: 8px;
-        box-shadow: none;
-        padding: 0;
+        max-width: 99vw;
+        gap: 7px;
+        padding: 0 2px;
     }
 
     .newsletter-cta__input,
     .newsletter-cta__button {
         border-radius: 6px;
-        height: 38px;
-        font-size: 0.98rem;
+        height: 60px !important;
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+}
+
+/* Mobile optimization for input, button, SVGs */
+@media (max-width: 600px) {
+    .newsletter-cta {
+        padding: 0 12px;
+    }
+
+    .newsletter-cta__content {
+        padding: 23px 2px 17px 2px;
+    }
+
+    .newsletter-cta__title {
+        font-size: 1.07rem;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-cta__form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 7px;
+        border-radius: 8px;
+        box-shadow: none;
+        background: none;
+        padding: 0;
+        max-width: 99vw;
+    }
+
+    .newsletter-cta__input,
+    .newsletter-cta__button {
+        flex: unset;
+        height: 60px !important;
+        font-size: 0.97rem;
+        border-radius: 5px;
+        padding: 0 30px;
     }
 
     .newsletter-cta__button {
         width: 100%;
         padding: 0;
+        margin-top: 0;
+    }
+
+    .newsletter-cta__badge {
+        font-size: 0.82rem;
+        padding: 6px 10px;
+        margin-bottom: 13px;
+    }
+
+    /* SVGs: shrink, move to corners, prevent overlap */
+    .newsletter-cta__star--yellow {
+        left: -10px;
+        bottom: 6px;
+        width: 38px;
+        height: 38px;
+        opacity: 0.6;
+    }
+
+    .newsletter-cta__sparkle--green {
+        left: 5px;
+        top: 38px;
+        width: 18px;
+        height: 18px;
+        opacity: 0.5;
+    }
+
+    .newsletter-cta__star--blue {
+        right: 4px;
+        top: 28px;
+        width: 22px;
+        height: 24px;
+        opacity: 0.5;
+    }
+
+    .newsletter-cta__flower {
+        right: -10px;
+        bottom: 6px;
+        width: 30px;
+        height: 30px;
+        opacity: 0.4;
+    }
+}
+
+/* Extra small screens: optionally hide SVGs */
+@media (max-width: 400px) {
+    .newsletter-cta {
+        padding: 0 4px;
+    }
+
+    .newsletter-cta__star--yellow,
+    .newsletter-cta__star--blue,
+    .newsletter-cta__sparkle--green,
+    .newsletter-cta__flower {
+        display: none;
     }
 }

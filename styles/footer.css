@@ -176,6 +176,7 @@
     margin-top: 0;
 }
 
+/* Tablet breakpoint */
 @media (max-width: 1150px) {
     .footer__main {
         flex-direction: column;
@@ -196,6 +197,7 @@
     }
 }
 
+/* Small tablet */
 @media (max-width: 800px) {
     .footer__main {
         flex-direction: column;
@@ -224,6 +226,7 @@
     }
 }
 
+/* Mobile breakpoint */
 @media (max-width: 600px) {
     .footer__main {
         flex-direction: column;
