@@ -1,12 +1,13 @@
 .customers {
-    margin-top: 8rem;
+    background-color: var(--primary-bg-color);
+    padding: 4rem 0;
 }
 
 .customers__title {
     font-size: 3rem;
     text-align: center;
     width: 40rem;
-    margin: 1rem auto;
+    margin: auto;
 }
 
 .customers__description {

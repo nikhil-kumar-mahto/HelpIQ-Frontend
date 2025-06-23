@@ -3,6 +3,7 @@
     --primary-color: #854ef2;
     --body-color: rgba(20, 9, 45, 1);
     --faded-text: rgba(124, 110, 151, 1);
+    --primary-bg-color: rgb(17, 7, 38);
 }
 
 * {
@@ -15,8 +16,6 @@
 
 body,
 html {
-    /* background-color: var(--body-color); */
-    background: linear-gradient(135deg, rgb(20, 9, 44) 0%, rgb(36, 19, 74) 50%, rgb(20, 9, 44) 100%);
     color: var(--text-color);
     max-width: 0 14vw;
     margin: 0 auto;

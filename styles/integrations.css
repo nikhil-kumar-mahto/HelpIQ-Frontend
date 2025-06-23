@@ -1,5 +1,5 @@
 .integrations-section {
-    background: radial-gradient(ellipse at top, #3d2460 0%, #150f26 100%);
+    background: var(--primary-bg-color);
     color: #fff;
     padding: 0;
     display: flex;

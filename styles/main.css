@@ -204,6 +204,7 @@
     }
 }
 
-/* .navbar-hero-container {
-    padding: 0 15vw;
-} */
+.navbar-hero-container {
+    background: linear-gradient(135deg, rgb(20, 9, 44) 0%, rgb(36, 19, 74) 50%, rgb(20, 9, 44) 100%);
+    padding-bottom: 3rem;
+}

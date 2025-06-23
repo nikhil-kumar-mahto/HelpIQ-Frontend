@@ -1,8 +1,8 @@
 .testimonials-section {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 8rem 20px;
     text-align: center;
+    background-color: var(--primary-bg-color);
+    padding: 4rem 15vw;
 }
 
 .testimonials-header {
@@ -146,7 +146,7 @@
 /* Tablet responsiveness */
 @media (max-width: 900px) {
     .testimonials-section {
-        padding: 40px 8px;
+        padding: 0 40px;
     }
 
     .testimonial-card {
@@ -176,7 +176,7 @@
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .testimonials-section {
-        padding: 25px 2px;
+        padding: 0 16px;
     }
 
     .testimonials-header {

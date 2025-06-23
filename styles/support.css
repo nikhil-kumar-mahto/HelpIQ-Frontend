@@ -1,9 +1,11 @@
 .support {
-    margin-top: 6rem;
     display: flex;
     gap: 4rem;
     align-items: center;
     padding: 0 15vw;
+    background: linear-gradient(90deg, rgb(20, 9, 44) 0%, rgb(36, 19, 74) 50%, rgb(20, 9, 44) 100%);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .support__content {
