@@ -1,0 +1,211 @@
+.newsletter-cta {
+    min-height: 420px;
+    background: radial-gradient(ellipse at top, #3d2460 0%, #150f26 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.newsletter-cta__content {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 64px 16px 54px 16px;
+}
+
+.newsletter-cta__badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ded6f7;
+    font-size: 1.08rem;
+    font-weight: 400;
+    padding: 8px 34px;
+    border-radius: 7px;
+    letter-spacing: 0.03em;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0 3px 14px 0 rgba(90, 40, 140, 0.08);
+}
+
+.newsletter-cta__title {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+    margin: 0 0 38px 0;
+    letter-spacing: -0.02em;
+}
+
+.newsletter-cta__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 11px;
+    box-shadow: 0 2px 12px 0 rgba(60, 26, 90, 0.08);
+    /* border: 1px solid rgba(255, 255, 255, 0.11);  <-- Removed */
+    overflow: hidden;
+    position: relative;
+    gap: 18px;
+    /* Add gap for spacing */
+    padding: 0 8px;
+    /* Optional: add some side padding for balance */
+}
+
+.newsletter-cta__input {
+    flex: 1 1 190px;
+    min-width: 0;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.11);
+    outline: none;
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 400;
+    padding: 0 18px;
+    height: 60px;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    transition: border-color 0.18s;
+}
+
+.newsletter-cta__input:focus {
+    border-color: #A587FF;
+}
+
+.newsletter-cta__input::placeholder {
+    color: #ded6f7;
+    opacity: 1;
+    font-weight: 400;
+}
+
+.newsletter-cta__button {
+    background: #A587FF;
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    height: 60px;
+    padding: 0 46px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.18s;
+    white-space: nowrap;
+}
+
+.newsletter-cta__button:hover,
+.newsletter-cta__button:focus {
+    background: #c1adff;
+}
+
+/* Decorative SVGs - positions */
+.newsletter-cta__star--yellow {
+    position: absolute;
+    left: 8vw;
+    bottom: 36px;
+    z-index: 1;
+    width: 84px;
+    height: 90px;
+    opacity: 0.85;
+}
+
+.newsletter-cta__sparkle--green {
+    position: absolute;
+    left: 14vw;
+    top: 120px;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    opacity: 0.85;
+}
+
+.newsletter-cta__star--blue {
+    position: absolute;
+    right: 12vw;
+    top: 62px;
+    z-index: 1;
+    width: 46px;
+    height: 56px;
+    opacity: 0.9;
+}
+
+.newsletter-cta__flower {
+    position: absolute;
+    right: 8vw;
+    bottom: 38px;
+    z-index: 1;
+    width: 66px;
+    height: 66px;
+    opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 950px) {
+    .newsletter-cta__title {
+        font-size: 2.2rem;
+    }
+
+    .newsletter-cta__content {
+        padding: 44px 6px 34px 6px;
+    }
+
+    .newsletter-cta__form {
+        max-width: 95vw;
+        gap: 10px;
+        padding: 0 3px;
+    }
+
+    .newsletter-cta__button,
+    .newsletter-cta__input {
+        border-radius: 6px;
+        height: 48px;
+        font-size: 1.06rem;
+    }
+
+    .newsletter-cta__input {
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter-cta__title {
+        font-size: 1.18rem;
+        margin-bottom: 23px;
+    }
+
+    .newsletter-cta__badge {
+        font-size: 0.88rem;
+        padding: 7px 16px;
+        margin-bottom: 17px;
+    }
+
+    .newsletter-cta__form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        border-radius: 8px;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .newsletter-cta__input,
+    .newsletter-cta__button {
+        border-radius: 6px;
+        height: 38px;
+        font-size: 0.98rem;
+    }
+
+    .newsletter-cta__button {
+        width: 100%;
+        padding: 0;
+    }
+}

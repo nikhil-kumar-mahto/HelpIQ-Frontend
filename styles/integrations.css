@@ -1,0 +1,140 @@
+.integrations-section {
+    background: radial-gradient(ellipse at top, #3d2460 0%, #150f26 100%);
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.integrations-section__container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrations-section__header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.integrations-section__badge {
+    display: inline-block;
+    padding: 6px 28px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    font-size: 0.97rem;
+    color: #ded6f7;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.integrations-section__title {
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 18px 0;
+    line-height: 1.1;
+}
+
+.integrations-section__description {
+    color: #ded6f7;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.44;
+    margin: 0 auto 0 auto;
+    max-width: 900px;
+}
+
+/* ICONS ROW */
+.integrations-section__icons {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 44px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+}
+
+.integration-icon {
+    width: 72px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 2px 14px 0 rgba(60, 26, 90, 0.07);
+}
+
+.integration-icon svg {
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .integrations-section__container {
+        max-width: 98vw;
+        padding-top: 40px;
+    }
+
+    .integrations-section__title {
+        font-size: 2rem;
+    }
+
+    .integrations-section__icons {
+        gap: 28px;
+        margin-top: 36px;
+    }
+
+    .integration-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .integration-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .integrations-section__container {
+        padding: 30px 4px 0 4px;
+    }
+
+    .integrations-section__title {
+        font-size: 1.19rem;
+    }
+
+    .integrations-section__description {
+        font-size: 0.92rem;
+    }
+
+    .integrations-section__icons {
+        gap: 18px;
+        margin-top: 28px;
+    }
+
+    .integration-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .integration-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>ChatBot Design</title>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="/assets/logo.png" alt="Logo" />
+        </div>
+        <div class="navbar__toggle" id="navbarToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__links" id="navbarLinks">
+            <a class="navbar__link" href="#">Home</a>
+            <a class="navbar__link" href="#">About</a>
+            <a class="navbar__link" href="#">Features</a>
+            <a class="navbar__link" href="#">Pages</a>
+            <div class="navbar__dropdown">
+                <a class="navbar__link" href="#">
+                    News <span class="arrow">&#9662;</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#">Company News</a>
+                    <a href="#">Press Releases</a>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+            <a class="navbar__link" href="#">Contact</a>
+        </div>
+        <div class="navbar__actions">
+            <button class="btn btn--outline">Login</button>
+            <button class="btn btn--primary">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <main class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">ChatBot Automating Customer Service</h1>
+            <p class="hero__subtitle">We're passionate about solving problems through creative communications.</p>
+
+            <div class="hero__email-form">
+                <input class="hero__email-input" type="email" placeholder="Enter your email" />
+                <button class="btn btn--primary">Sign In</button>
+            </div>
+
+            <label class="hero__note">Try us free | No credit card required | Cancel Anytime</label>
+        </div>
+
+        <div class="hero__image">
+            <img src="/assets/banner.png" alt="Banner" />
+        </div>
+    </main>
+
+    <h3 class="main-footer">Trusted by thousands of companies across 50+ countries</h3>
+
+    <!-- logos -->
+    <div class="company__logos">
+        <img src="/assets/company_logo_1.png" alt="">
+        <img src="/assets/company_logo_2.png" alt="">
+        <img src="/assets/company_logo_3.png" alt="">
+        <img src="/assets/company_logo_4.png" alt="">
+        <img src="/assets/company_logo_5.png" alt="">
+    </div>
+
+    <!-- Features section -->
+    <section class="features">
+        <h5 class="features__tag">Features</h5>
+        <h2 class="features__title">Segment and Match Leads to your Sales Reps</h2>
+        <p class="features__description">We're passionate about solving problems through creative communications.</p>
+
+        <div class="features__content">
+            <div class="features__left">
+                <div class="features__item features__item--highlighted">
+                    <img src="/assets/shoutout.png" alt="">
+                    <div class="features__text">
+                        <h4 class="features__item-title">Power Up Your Marketing</h4>
+                        <p class="features__item-subtext">The golden age of Generative communication here. Revenue &
+                            Digital
+                            Assistants.</p>
+                    </div>
+                </div>
+                <div class="features__item">
+                    <img src="/assets/report.png" alt="">
+                    <h4 class="features__item-title">Supercharge Your Sales</h4>
+                </div>
+                <div class="features__item">
+                    <img src="/assets/call.png" alt="">
+                    <h4 class="features__item-title">Optimize Your Support</h4>
+                </div>
+            </div>
+            <div class="features__right">
+                <img src="/assets/features.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about">
+        <div class="about__content">
+            <h5 class="badge-text">About Us</h5>
+            <h2 class="about__title">Segment and Match Leads to Your Sales Reps</h2>
+            <p class="about__description">
+                More than 80% of the public reviews by our users mention amazing and super fast
+                customer support as one of our biggest strengths. Texting for Customer Engagement
+            </p>
+            <button class="btn btn--primary">Contact Us</button>
+        </div>
+        <div class="about__image">
+            <img src="/assets/about-section-img.png" alt="About Section Image">
+        </div>
+    </section>
+
+    <!-- Talk to Customers Section -->
+    <section class="customers">
+        <h2 class="customers__title">Talk to Customers Any Time, Any Location</h2>
+        <p class="customers__description">
+            Create a knowledge base for your customers and activate an FAQ bot to automatically suggest relevant
+            articles
+            directly in the chat.
+        </p>
+
+        <div class="customers__stats">
+            <div class="customers__stat-item">
+                <h3 class="customers__stat-number">24x</h3>
+                <p class="customers__stat-text">Jump in the customer conversations</p>
+            </div>
+            <div class="customers__stat-item">
+                <h3 class="customers__stat-number">75%</h3>
+                <p class="customers__stat-text">Queries resolved without human support</p>
+            </div>
+            <div class="customers__stat-item">
+                <h3 class="customers__stat-number">97%</h3>
+                <p class="customers__stat-text">Reduction in average resolution time</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="support">
+        <div class="support__content">
+            <div class="badge-text">LIVE SUPPORT</div>
+            <h1 class="support__title">Robust Automation Driven by Artificial</h1>
+            <p class="support__description">
+                More than 80% of the public reviews by our users mention amazing and super fast.
+            </p>
+
+            <div class="support__channels">
+                <div class="support__channel">
+                    <div class="support__channel__logo">🌐</div>
+                    <label>Website</label>
+                </div>
+                <div class="support__channel">
+                    <div class="support__channel__logo">
+                        🔗
+                    </div>
+                    <label>
+                        Social Media
+                    </label>
+                </div>
+                <div class="support__channel">
+                    <div class="support__channel__logo">
+                        📱
+                    </div>
+                    <label for="">In-App</label>
+                </div>
+                <div class="support__channel">
+                    <div class="support__channel__logo">
+                        🌀
+                    </div>
+                    <label for="">Web App</label>
+                </div>
+                <div class="support__channel">
+                    <div class="support__channel__logo">✉️</div>
+                    <label for="">Email</label>
+                </div>
+            </div>
+
+            <div class="link-group">
+                <a class="link-text" href="www.clevercloud.com">www.clevercloud.com</a>
+                <div class="support__link">
+                    <img src="/assets/link.png" alt="">
+                    <button class="support__btn-go">Go</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="support__visuals">
+            <img src="/assets/live-support.png" alt="">
+        </div>
+    </section>
+
+    <!-- testimonials section start -->
+
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <span class="testimonials-badge">TESTIMONIALS</span>
+            <h2 class="testimonials-title">Trusted by Millions of<br>Customers.</h2>
+        </div>
+        <div class="testimonials-carousel">
+            <button class="carousel-btn left" id="prevBtn">
+                <span>&larr;</span>
+            </button>
+            <div class="testimonial-card-container">
+                <div class="testimonial-card" id="testimonialCard">
+                    <div class="testimonial-image-bg">
+                        <img class="testimonial-img" src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="Customer Photo">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote-icon">&#10077;</div>
+                        <div class="testimonial-stars">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="testimonial-text">
+                            “Fames gravid nulam lectus vivera placerat utricies. Lorem ipsum dolor sit amet consectetur.
+                            Vel
+                            est ac sit amet tincidunt vel turpis penabus. Fusce eleifend suscipit”
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-author-name">John Doe</div>
+                            <div class="testimonial-author-role">Business Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn right" id="nextBtn">
+                <span>&rarr;</span>
+            </button>
+        </div>
+    </section>
+    <!-- testimonials section end -->
+
+
+    <!-- FAQ section -->
+    <section class="faq-section">
+        <div class="faq-section__container">
+            <div class="faq-section__header">
+                <span class="faq-section__badge">FAQS</span>
+                <h2 class="faq-section__title">Frequently Asked<br />Questions</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-accordion__item faq-accordion__item--active">
+                    <button class="faq-accordion__question" aria-expanded="true" type="button">
+                        <span class="faq-accordion__q">Q.</span>
+                        <span class="faq-accordion__text"><strong>I am a nonprofit. Do you offer any
+                                discounts?</strong></span>
+                        <span class="faq-accordion__icon faq-accordion__icon--active">−</span>
+                    </button>
+                    <div class="faq-accordion__answer" style="display: block;">
+                        <p>
+                            Yes, we offer special discounts for nonprofit organizations. Please contact our support team
+                            with your nonprofit verification and we will guide you through the process of availing
+                            special
+                            pricing.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion__item">
+                    <button class="faq-accordion__question" aria-expanded="false" type="button">
+                        <span class="faq-accordion__q">Q.</span>
+                        <span class="faq-accordion__text">Why does the pricing look different?</span>
+                        <span class="faq-accordion__icon">+</span>
+                    </button>
+                    <div class="faq-accordion__answer" style="display: none;">
+                        <p>
+                            Our pricing may vary based on your location, subscription plan, and any promotions that may
+                            be
+                            active. For the most accurate pricing details, please make sure you are logged into your
+                            account
+                            and check the pricing page.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion__item">
+                    <button class="faq-accordion__question" aria-expanded="false" type="button">
+                        <span class="faq-accordion__q">Q.</span>
+                        <span class="faq-accordion__text">What payment methods do you support?</span>
+                        <span class="faq-accordion__icon">+</span>
+                    </button>
+                    <div class="faq-accordion__answer" style="display: none;">
+                        <p>
+                            We accept major credit cards (Visa, MasterCard, American Express), PayPal, and wire
+                            transfers
+                            for annual subscriptions. If you have specific payment requirements, reach out to our
+                            billing
+                            team for assistance.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion__item">
+                    <button class="faq-accordion__question" aria-expanded="false" type="button">
+                        <span class="faq-accordion__q">Q.</span>
+                        <span class="faq-accordion__text">How do I update my payment method?</span>
+                        <span class="faq-accordion__icon">+</span>
+                    </button>
+                    <div class="faq-accordion__answer" style="display: none;">
+                        <p>
+                            You can update your payment method from your account settings by navigating to the "Billing"
+                            section. Click on "Edit Payment Method," enter your new details, and save the changes.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion__item">
+                    <button class="faq-accordion__question" aria-expanded="false" type="button">
+                        <span class="faq-accordion__q">Q.</span>
+                        <span class="faq-accordion__text">What’s the cost of additional users?</span>
+                        <span class="faq-accordion__icon">+</span>
+                    </button>
+                    <div class="faq-accordion__answer" style="display: none;">
+                        <p>
+                            Additional users can be added to your subscription at a prorated cost. The exact amount
+                            depends
+                            on your current plan and billing cycle. Visit our pricing page or contact support for more
+                            details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section end -->
+
+
+    <!-- iintegration section -->
+    <section class="integrations-section">
+        <div class="integrations-section__container">
+            <div class="integrations-section__header">
+                <span class="integrations-section__badge">INTEREGRATION</span>
+                <h2 class="integrations-section__title">
+                    Single App to Support<br />
+                    Multi-channel
+                </h2>
+                <p class="integrations-section__description">
+                    More than 80% of the public reviews by our users mention amazing and super fast customer support as
+                    one
+                    of our biggest strengths. Texting for Customer Engagement
+                </p>
+            </div>
+            <div class="integrations-section__icons">
+                <div class="integration-icon integration-icon--zapier">
+                    <img src="/assets/svgs/zapier.svg" alt="" width="26" height="26">
+                </div>
+                <div class="integration-icon integration-icon--slack">
+                    <img src="/assets/svgs/slack.svg" alt="" width="26" height="26">
+                </div>
+                <div class="integration-icon integration-icon--google">
+                    <img src="/assets/svgs/google-icon.svg" alt="" width="26" height="26">
+                </div>
+                <div class="integration-icon integration-icon--shopify">
+                    <img src="/assets/svgs/shopify.svg" alt="" width="26" height="26">
+                </div>
+                <div class="integration-icon integration-icon--webflow">
+                    <img src="/assets/svgs/webflow.svg" alt="" width="26" height="26">
+                </div>
+                <div class="integration-icon integration-icon--tinder">
+                    <img src="/assets/svgs/tinder.svg" alt="" width="26" height="26">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA section -->
+    <section class="newsletter-cta">
+        <svg class="newsletter-cta__star newsletter-cta__star--yellow" width="112" height="120" viewBox="0 0 112 120"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M56 0c2.2 36.5 7.2 53.5 56 60-48.8 6.5-53.8 23.5-56 60C53.8 83.5 48.8 66.5 0 60c48-6.5 53.8-23.5 56-60z"
+                fill="#E8FF17" />
+        </svg>
+        <svg class="newsletter-cta__sparkle newsletter-cta__sparkle--green" width="36" height="36" viewBox="0 0 36 36"
+            fill="none">
+            <g opacity="0.9">
+                <path
+                    d="M18 0v7.5M18 28.5V36M0 18h7.5M28.5 18H36M6.4 6.4l5.3 5.3M24.3 24.3l5.3 5.3M6.4 29.6l5.3-5.3M24.3 11.7l5.3-5.3"
+                    stroke="#31F98C" stroke-width="2" stroke-linecap="round" />
+            </g>
+        </svg>
+        <svg class="newsletter-cta__star newsletter-cta__star--blue" width="56" height="68" viewBox="0 0 56 68"
+            fill="none">
+            <path
+                d="M28 0c1.1 20.7 3.6 30.3 28 34-24.4 3.7-26.9 13.3-28 34C26.1 47.3 23.6 37.7 0 34c23.6-3.7 26.9-13.3 28-34z"
+                fill="#24E9FF" />
+        </svg>
+        <svg class="newsletter-cta__flower" width="98" height="98" viewBox="0 0 98 98" fill="none">
+            <g opacity="0.7">
+                <ellipse cx="49" cy="10" rx="7" ry="14" fill="#A587FF" />
+                <ellipse cx="49" cy="88" rx="7" ry="14" fill="#A587FF" />
+                <ellipse cx="88" cy="49" rx="14" ry="7" fill="#A587FF" />
+                <ellipse cx="10" cy="49" rx="14" ry="7" fill="#A587FF" />
+                <ellipse cx="76.98" cy="20.98" rx="7" ry="14" transform="rotate(45 76.98 20.98)" fill="#A587FF" />
+                <ellipse cx="76.98" cy="77.02" rx="7" ry="14" transform="rotate(-45 76.98 77.02)" fill="#A587FF" />
+                <ellipse cx="20.98" cy="77.02" rx="7" ry="14" transform="rotate(-45 20.98 77.02)" fill="#A587FF" />
+                <ellipse cx="20.98" cy="20.98" rx="7" ry="14" transform="rotate(45 20.98 20.98)" fill="#A587FF" />
+            </g>
+        </svg>
+
+        <div class="newsletter-cta__content">
+            <button class="newsletter-cta__badge" type="button">START YOUR FREE TROLE</button>
+            <h2 class="newsletter-cta__title">Never Miss New Updates<br>Start Your Free Trial</h2>
+            <form class="newsletter-cta__form" autocomplete="off">
+                <input type="email" class="newsletter-cta__input" placeholder="Email Address" required>
+                <button type="submit" class="newsletter-cta__button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="site-footer">
+        <div class="footer__main">
+            <div class="footer__col footer__col--brand">
+                <div class="footer__brand">
+                    <img src="/assets/logo.png" alt="">
+                </div>
+                <div class="footer__desc">
+                    The golden age of Generative com cation here. Build your own chatbot scenarios without coding
+                </div>
+                <div class="footer__contact">
+                    <div><strong>Info@support.com</strong></div>
+                    <div>(+21)106-329-0109</div>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social footer__social--pinterest" aria-label="Pinterest">
+                        <img src="assets/svgs/pintrest.svg" alt="" width="20" height="20">
+                    </a>
+                    <a href="#" class="footer__social footer__social--facebook" aria-label="Facebook">
+                        <img src="/assets/svgs/facebook.svg" width="25" height="25" alt="">
+                    </a>
+                    <a href="#" class="footer__social footer__social--x" aria-label="X">
+                        <img src="/assets/svgs/x.svg" width="36" height="36" alt="">
+                    </a>
+                    <a href="#" class="footer__social footer__social--linkedin" aria-label="LinkedIn">
+                        <img src="/assets/svgs/linkedin.svg" width="30" height="30" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col footer__col--links">
+                <div class="footer__links-group">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Order a Brochure</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">support Center</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-group">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Social Group</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Copyright © 2024 Clever Cloud, Inc. All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="testimonials.js"></script>
+    <script src="faq-section.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>

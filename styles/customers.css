@@ -1,0 +1,46 @@
+.customers {
+    margin-top: 8rem;
+}
+
+.customers__title {
+    font-size: 3rem;
+    text-align: center;
+    width: 40rem;
+    margin: 1rem auto;
+}
+
+.customers__description {
+    width: 36rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.customers__stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.customers__stat-item {
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.customers__stat-number {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.customers__stat-text {
+    opacity: 0.6;
+    margin-top: 1rem;
+}

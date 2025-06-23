@@ -1,0 +1,65 @@
+.hero {
+    display: flex;
+    margin-top: 7rem;
+    gap: 7rem;
+    overflow: hidden;
+    min-height: calc(100vh - 580px);
+}
+
+.hero__content {
+    margin-top: 9rem;
+    flex: 1;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.hero__subtitle {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+}
+
+.hero__email-form {
+    margin-top: 2.5rem;
+    height: 60px;
+    display: flex;
+}
+
+.hero__email-input {
+    padding: 0 1rem;
+    width: 68%;
+    background: transparent;
+    border: 1px solid gray;
+    color: var(--text-color);
+    height: 100%;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.hero__email-input::placeholder {
+    color: var(--text-color);
+}
+
+.hero__note {
+    display: block;
+    margin-top: 1.7rem;
+    color: rgba(124, 110, 151, 1);
+}
+
+.hero__image {
+    flex: 1;
+}
+
+.main-footer {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.company__logos {
+    display: flex;
+    justify-content: space-between;
+}
