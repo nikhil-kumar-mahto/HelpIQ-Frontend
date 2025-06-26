@@ -204,8 +204,6 @@
 
     .features__item,
     .features__item--highlighted {
-        flex-direction: column;
-        align-items: flex-start;
         gap: 0.7rem;
         padding: 0.6rem;
     }

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15vw;
+    padding: 1vw 15vw;
 }
 
 .navbar__links {
@@ -102,6 +102,11 @@
     display: none;
 }
 
+.navbar__logo img {
+    width: 15rem;
+    height: auto;
+}
+
 /* Hide navbar links and show toggle on mobile */
 @media (max-width: 768px) {
     .navbar {
@@ -160,7 +165,6 @@
     .navbar__logo img {
         width: 12.5rem;
         height: auto;
-        /* Keeps aspect ratio */
     }
 
     .navbar__actions {

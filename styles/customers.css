@@ -118,10 +118,6 @@
 
 /* Small mobile */
 @media (max-width: 480px) {
-    .customers {
-        margin-top: 1.2rem;
-    }
-
     .customers__title {
         font-size: 1rem;
     }
@@ -131,9 +127,9 @@
     }
 
     .customers__stat-item {
-        width: 95vw;
+        width: 40vw;
         max-width: 98vw;
-        height: 7rem;
+        height: 40vw;
         padding: 0.5rem;
     }
 

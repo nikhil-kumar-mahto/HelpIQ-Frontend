@@ -202,7 +202,6 @@
 /* Small mobile */
 @media (max-width: 480px) {
     .support {
-        margin-top: 1rem;
         gap: 1rem;
         padding-left: 6px;
         padding-right: 6px;

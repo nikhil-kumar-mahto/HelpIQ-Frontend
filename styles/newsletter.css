@@ -103,7 +103,7 @@
 .newsletter-cta__star--yellow {
     position: absolute;
     left: 16vw;
-    bottom: 36px;
+    bottom: 4px;
     z-index: 1;
     width: 84px;
     height: 90px;
@@ -133,7 +133,7 @@
 .newsletter-cta__flower {
     position: absolute;
     right: 20vw;
-    bottom: 38px;
+    bottom: 28px;
     z-index: 1;
     width: 66px;
     height: 66px;
